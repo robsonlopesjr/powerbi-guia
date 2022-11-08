@@ -60,6 +60,9 @@
 
 ### SUMX
 
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/iteradoras/sumx/realizando-a-soma-de-valores-de-forma-acumulativa-entre-duas-colunas.pdf">Exemplo: Realizando a soma de valores de forma acumulativa entre duas colunas.
+</a></li>
+
 ### COUNTX
 
 ### AVERAGEX
