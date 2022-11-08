@@ -34,14 +34,26 @@
 ### COUNT
 <li>Conta o número de células de uma coluna que contém <strong>números</strong>.</li>
 
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/estatisticas/count/quantidade-de-pedidos-pelo-codigo-da-venda.pdf">Exemplo: Quantidade de pedidos pelo código da venda.
+</a></li>
+
 ### DISTINCTCOUNT
 <li>Conta o número de <strong>valores distintos/únicos</strong> (sem repetições) de uma coluna.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/estatisticas/distinctcount/quantidade-de-pedidos-pelo-codigo-da-venda-de-forma-distinta.pdf">Exemplo: Quantidade de pedidos pelo código da venda de forma distinta.
+</a></li>
 
 ### DISTINCTCOUNTNOBLANK
 <li>Conta o número de <strong>valores distintos/únicos</strong> (sem repetições) de uma coluna, mas <strong>sem considerar os valores vazios/em branco</strong>.</li>
 
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/estatisticas/distinctcountnoblank/quantidade-de-pedidos-pelo-codigo-da-venda-excluindo-valores-vazios.pdf">Exemplo: Quantidade de pedidos pelo código da venda (excluindo valores vazios).
+</a></li>
+
 ### COUNTROWS
 <li>Conta o <strong>número de linhas na tabela especificada</strong> ou em uma tabela definida por uma expressão.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/estatisticas/countrows/quantidade-de-pedidos-pelo-codigo-da-venda-contando-todas-as-linhas-da-tabela.pdf">Exemplo: Quantidade de pedidos pelo código da venda (Contando a quantidade de linhas de uma tabela).
+</a></li>
 
 ## Funções Iteradoras
 <li>Funções iteradoras permitem que você percorra a mesma expressão a cada linha de uma tabela e no final traga um único valor agregado.</li>
