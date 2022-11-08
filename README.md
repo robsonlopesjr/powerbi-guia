@@ -57,6 +57,7 @@
 
 ## Funções Iteradoras
 <li>Funções iteradoras permitem que você percorra a mesma expressão a cada linha de uma tabela e no final traga um único valor agregado.</li>
+<li>A grande vantagem de utilizar funções iteradoras é eliminar a necessidade de adicionar novas colunas calculadas no seu projeto.</li>
 
 ### SUMX
 
@@ -68,6 +69,10 @@
 ### AVERAGEX
 
 ### RANKX
+<li>Ideal para quando precisamos fazer um ranking de produtos, vendedores, clientes (e várias outras aplicações, de acordo com a situação de negócio).</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/iteradoras/rankx/criar-um-ranking-de-categorias-de-acordo-com-o-faturamento.pdf">Exemplo: Criar um ranking de categorias de acordo com o faturamento.
+</a></li>
 
 ### CALCULATE
 <li>Avalia uma expressão em um contexto de <strong>filtro</strong> modificado</li>
@@ -165,6 +170,11 @@
 ### ALL
 <li>Retorna todas as linhas de uma tabela, ou todos os valores de uma coluna, IGNORANDO qualquer filtro aplicado</li>
 <li>Ao invés de adicionar um contexto de filtro, a função ALL remove os filtros daquele valor. Ela é muito utilizada quando você precisa de valores que não irão reagir as mudanças de filtro no dashboard (ex: <strong>% do total</strong>, onde o denominador deve permanecer um valor "fixo")</li>
+<li>Possibilita alterar o comportamento do filtro de um contexto no relatório.</li>
+<li>A função ALL ignora quaisquer filtros aplicados (e considera a tabela como um todo, o valor total "fixo").</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/iteradoras/rankx/criar-um-ranking-de-categorias-de-acordo-com-o-faturamento.pdf">Exemplo: Criar um ranking de categorias de acordo com o faturamento.
+</a></li>
 
 ### DIVIDE
 <li>Função DIVIDE vs. operador (/)</li>
