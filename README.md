@@ -19,6 +19,8 @@
 
 <li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/agregacao/max/qual-o-valor-maximo-do-produto-vendido.pdf">Exemplo: Qual o valor máximo do produto vendido.
 </a></li>
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/agregacao/max/qual-a-ultima-data-existente-nos-dados.pdf">Exemplo: Qual a última data existente nos dados.
+</a></li>
 
 ### MIN
 <li>Retorna o menor valor numérico de uma coluna ou entre duas expressões escalares.</li>
