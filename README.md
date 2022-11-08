@@ -161,6 +161,9 @@
 <li>A função não retornará nenhum valor, apenas habilitará a relação indicada durante o cálculo.</li>
 <li>Interessante para quando temos múltiplas tabelas de data no modelo (em tabelas diferentes) conectadas a uma única tabela dCalendário.</li>
 
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/funcoes_de_relacao/userelationship/calcular-a-quantidade-de-documentos-entregues.pdf">Exemplo: Calcular a quantidade de documentos entregues.
+</a></li>
+
 ### CROSSFILTER
 <li>Modifica a direção (<->) do filtro – é mais seguro do que deixar como "Both" e evita ambiguidade no modelo</li>
 <li>Ao invés de utilizar relacionamentos bi-direcionais, utilize a CROSSFILTER para ativar a direção desejada em um caso específico.</li>
@@ -206,7 +209,7 @@ ADDCOLUMNS(
     "Trimestre", "Q" & INT(FORMAT([Date],"q")),
     "Mês", MONTH([Date]),
     "Nome do mês", FORMAT([Date],"mmmm"),
-"Mês abrev", FORMAT([Date],"mmm"),
+    "Mês abrev", FORMAT([Date],"mmm"),
     "Semana do ano", WEEKNUM([Date])
 )
 ```
