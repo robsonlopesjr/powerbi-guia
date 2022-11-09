@@ -283,7 +283,7 @@ Iremos procurar pela tabela de "Variação no Tempo", no menu à direita, onde t
 
 ### Parte no todo
 <li>Esses tipos de gráficos são comuns quando queremos representar quanto uma quantidade é representativa num total específico, ou seja, o quanto ela é importante no total em que ela está inserida.</li>
-<li>A seguir veremos os gráficos mais comuns desse estilo para um exemplo de gastos em áreas diferentes e poderemos ver suas representatividades, sendo o somatório dos gastos individuais das áreas igual ao total de gastos.<li>
+<li>A seguir veremos os gráficos mais comuns desse estilo para um exemplo de gastos em áreas diferentes e poderemos ver suas representatividades, sendo o somatório dos gastos individuais das áreas igual ao total de gastos.</li>
 
 <img alt="Gráficos Parte no Todo" title="Gráficos Parte no Todo" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/parte-no-todo.png" />
 
@@ -328,3 +328,49 @@ Iremos procurar pela tabela de "Parte do Todo", no menu à direita, onde teremos
 <img alt="Barras Empilhadas" title="Barras Empilhadas" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/barras-empilhadas.png" />
 
 Nesse tipo de gráfico não precisamos nos atentar ao todo para entender qual o maior, ele já ficará destacado numa barra maior que as outras na relação de gastos apresentada pelo gráfico.
+
+### Fluxo
+<li>Para análise de fluxo, temos que, a partir de um total, queremos avaliar como se dá um fluxo de acontecimentos até o resultado final (total).</li>
+
+#### Funil
+Para criar esse novo tipo de gráfico, devemos acessar a terceira aba de relatórios, a “3. Fluxo”, na parte inferior do Power BI. Lembre-se de clicar na área em branco do nosso relatório para continuar.
+
+Então, iremos no menu Visualizações, procurar pelo ícone correspondente ao gráfico, e clicar. Arraste para onde quiser e dimensione de acordo com o que desejar.
+
+Iremos procurar pela tabela de “Fluxo”, no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir “Status” como Grupo e “Quantidade” como Valores</strong>, novamente. Teremos, então, o gráfico de funil no Power BI:
+
+<img alt="Funil" title="Funil" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/funil.png" />
+
+Com esse tipo de gráfico você tem noções percentuais a cada etapa de participação da fase posterior em relação à fase anterior, com imagem de gráfico como se fosse um funil, com a representação percentual do valor final em relação ao total.
+
+### Outros gráficos úteis incríveis do Power BI
+
+#### Medidor radial
+Um dos gráficos do Power BI mais relevantes é o medidor radial. 
+
+Trata-se de um medidor que indica uma agulha com o objetivo a ser alcançado e um valor demarcado para demonstrar o progresso. Ou seja, permite visualizar exatamente o quanto falta para alcançar o objetivo, de modo a gerar uma visão mais específica.
+
+Além de demonstrar o progresso com uma marcação visual, há um valor também para simplificar a visão. Nas extremidades, percebe-se o valor inicial e o valor-limite.
+
+#### KPIs
+Os KPIs são indicadores que ajudam a medir o desempenho nas operações da empresa e entender se a companhia está próxima ou não de alcançar seu objetivo. Permite mensurar os resultados, visualizar como se pode melhorar e acompanhar de perto o andamento.
+
+Os KPIs geralmente podem ser um valor simples, um número fácil de acompanhar. Ou também podem ser uma representação gráfica mais elaborada e robusta. 
+
+Inclusive, pode-se utilizar um medidor radial para monitorar um KPI. 
+
+#### Combinação
+Para misturar gráficos e observar a comparação entre eles, você pode fazer uso de um gráfico de combinação. Pode envolver, por exemplo, um gráfico de linha e colunas no mesmo eixo, correlação entre duas diferentes medidas, comparação entre padrões, etc.
+
+A combinação permite visualizar com facilidade como uma variável se comporta com relação a outra ao longo do tempo. 
+
+#### Dispersão
+Gráficos de dispersão são um ótimo exemplo de gráficos no Power BI. 
+
+Permitem espalhar pontos ao longo de um gráfico para tentar entender como funcionam os agrupamentos de dados. 
+
+É a forma de visualização ideal para tentar entender a correlação entre dados, clusterização e formas de relacionamento entre dados pontuais.
+
+Ou seja, visualmente, fica mais fácil gerenciar a distância e a proximidade entre um elemento e outro, bem como o tamanho de um grupo com relação a outro. 
+
+Também é ideal para exibir dados que estejam em conjunto ou agrupados em uma base. Esse relacionamento indicará um cluster, uma massa de dados no gráfico. 
