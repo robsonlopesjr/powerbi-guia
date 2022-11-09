@@ -251,12 +251,14 @@ Exemplo de como representar os dados quando se quer comparar duas variáveis bas
 
 ### Variação no tempo
 <li>Análises gráficas para mostrar a variação como uma determinada variável se comporta no tempo.</li>
+
 <img alt="Gráficos de Variação no Tempo" title="Gráficos de Variação no Tempo" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/variacao-no-tempo.png" />
 
 #### Colunas Empilhadas
 Para criar o gráfico de colunas empilhadas no Power BI, devemos na primeira guia do Power BI, no menu à direita de Visualizações, procurar pelo ícone correspondente ao gráfico, e clicar. Arraste para onde quiser e dimensione de acordo com o que desejar.
 
 Iremos procurar pela tabela de "Variação no Tempo", no menu à direita, onde teremos os nossos dados de interesse, e iremos inserir "Qtd. Vendas" como valores e "Data da Venda" como Eixo. Teremos, então, a seguinte visualização:
+
 <img alt="Colunas Empilhadas" title="Colunas Empilhadas" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/colunas-empilhadas.png" />
 
 <strong>O gráfico de colunas empilhadas nos traz uma visualização "quebrada"</strong> das vendas durante o ano, como se fizesse uma separação física entre os meses, o que não é o que queremos. <strong>O ideal</strong> para vermos a continuidade de vendas durante um período <strong>é uma visualização contínua</strong>, sem "quebras" ou separações.
@@ -267,12 +269,62 @@ O gráfico de <strong>linhas é melhor do que o de colunas empilhadas para dar e
 Para criar o gráfico de linhas no Power BI, lembre-se de clicar fora do gráfico de colunas empilhadas (na área em branco do nosso relatório) para ele não ser substituído ao criar o gráfico de linhas. Iremos no menu <strong>Visualizações</strong>, procurar pelo <strong>ícone</strong> correspondente ao gráfico, e <strong>clicar. Arraste para onde quiser</strong> e <strong>dimensione</strong> de acordo com o que desejar.
 
 Iremos procurar pela tabela de "Variação no Tempo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Qtd. Vendas" como valores e "Data da Venda" como Eixo</strong>, novamente. Teremos, então, a seguinte visualização:
+
 <img alt="Linhas" title="Linhas" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/linhas.png" />
 
 Temos também um gráfico muito parecido com o de linhas, que difere apenas pelo preenchimento da parte debaixo da linha (literalmente) até o eixo horizontal do gráfico com uma cor. Ele é como se fosse o gráfico de linhas com o preenchimento na parte debaixo da linha, o que dá um efeito visual interessante ao gráfico, que não parece ser mais "vazio".
 
 #### Áreas
-Para criar o gráfico de área no Power BI, lembre-se de clicar fora do gráfico de colunas empilhadas (na área em branco do nosso relatório) para ele não ser substituído ao criar o gráfico de área. Iremos no menu Visualizações, procurar pelo ícone correspondente ao gráfico, e clicar. Arraste para onde quiser e dimensione de acordo com o que desejar.
+Para criar o gráfico de área no Power BI, lembre-se de clicar fora do gráfico de colunas empilhadas (na área em branco do nosso relatório) para ele não ser substituído ao criar o gráfico de área. Iremos no menu <strong>Visualizações</strong>, procurar pelo <strong>ícone</strong> correspondente ao gráfico, e <strong>clicar. Arraste para onde quiser</strong> e <strong>dimensione</strong> de acordo com o que desejar.
 
-Iremos procurar pela tabela de “Variação no Tempo”, no menu à direita, onde teremos os nossos dados de interesse, e iremos inserir “Qtd. Vendas” como valores e “Data da Venda” como Eixo, novamente. Teremos, então, a seguinte visualização:
+Iremos procurar pela tabela de "Variação no Tempo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Qtd. Vendas" como valores e "Data da Venda" como Eixo</strong>, novamente. Teremos, então, a seguinte visualização:
+
 <img alt="Área" title="Área" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/area.png" />
+
+### Parte no todo
+<li>Esses tipos de gráficos são comuns quando queremos representar quanto uma quantidade é representativa num total específico, ou seja, o quanto ela é importante no total em que ela está inserida.</li>
+<li>A seguir veremos os gráficos mais comuns desse estilo para um exemplo de gastos em áreas diferentes e poderemos ver suas representatividades, sendo o somatório dos gastos individuais das áreas igual ao total de gastos.<li>
+
+<img alt="Gráficos Parte no Todo" title="Gráficos Parte no Todo" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/parte-no-todo.png" />
+
+#### Pizza
+O primeiro tipo de gráfico que nos vêm à mente é o de pizza, onde teremos a distribuição das fatias da pizza de acordo com a representatividade de cada área (% do total) em relação ao total de gastos somados (100%). A maior representatividade implica numa fatia de tamanho maior, e uma representatividade menor implica numa fatia de tamanho menor na pizza.
+
+Para criar esse tipo de gráfico devemos acessar a segunda aba de relatórios, a aba "2. Parte no todo", na parte inferior do Power BI. Lembre-se de clicar na área em branco do nosso relatório para continuar.
+
+Então, iremos no menu <strong>Visualizações</strong>, procurar pelo <strong>ícone</strong> correspondente ao gráfico, e <strong>clicar. Arraste para onde quiser</strong> e <strong>dimensione</strong> de acordo com o que desejar.
+
+Iremos procurar pela tabela de "Parte do Todo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Gastos" como Legenda e "Total R$" como Valores</strong>, novamente. Teremos, então, o gráfico de pizza no Power BI:
+
+<img alt="Pizza" title="Pizza" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/pizza.png" />
+
+Quando temos muitas fatias de pizza, ou as partes (tamanho da fatia) são muito próximos, temos dificuldade de enxergar com clareza essa divisão.
+
+#### Rosca
+Para criar esse tipo de gráfico devemos acessar a segunda aba de relatórios, a aba "2. Parte no todo", na parte inferior do Power BI. Lembre-se de clicar na área em branco do nosso relatório para continuar.
+
+Então, iremos no menu <strong>Visualizações</strong>, procurar pelo <strong>ícone</strong> correspondente ao gráfico, e <strong>clicar. Arraste para onde quiser</strong> e <strong>dimensione</strong> de acordo com o que desejar.
+
+Iremos procurar pela tabela de "Parte do Todo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Gastos" como Legenda e "Total R$" como Valores</strong>, novamente. Teremos, então, o gráfico de rosca no Power BI:
+
+<img alt="Rosca" title="Rosca" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/rosca.png" />
+
+#### Árvore
+Para criar esse novo tipo de gráfico, também conhecido como treemap no Power BI, devemos acessar a segunda aba de relatórios, a "2. Parte no todo", na parte inferior do Power BI. Lembre-se de clicar na área em branco do nosso relatório para continuar.
+
+Então, iremos no menu <strong>Visualizações</strong>, procurar pelo <strong>ícone</strong> correspondente ao gráfico, e <strong>clicar. Arraste para onde quiser</strong> e <strong>dimensione</strong> de acordo com o que desejar.
+
+Iremos procurar pela tabela de "Parte do Todo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Gastos" como Legenda e "Total R$" como Valores</strong>, novamente. Teremos, então, o gráfico de árvore no Power BI:
+
+<img alt="Árvore" title="Árvore" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/arvore.png" />
+
+Ele nos permite uma visão em "pizza quadrada" com as divisões de partes maiores preenchidas com as maiores participações dos gastos individuais nos totais, e ele consegue aproveitar melhor os rótulos de dados e a área do gráfico em si, em relação aos gráficos de Pizza e de Rosca.
+
+#### Barras Empilhadas
+Para criar o gráfico de barras empilhadas no Power BI nós devemos fazer o mesmo procedimento feito para os gráficos anteriores. Ou seja, clicar na área em branco do nosso relatório para continuar e escolher no menu Visualizações pelo ícone correspondente ao gráfico, e clicar. Arrastar para onde quiser e dimensione de acordo com o que desejar.
+
+Iremos procurar pela tabela de "Parte do Todo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Gastos" como Legenda e "Total R$" como Valores</strong>, novamente. Teremos, então, o gráfico de barras empilhadas:
+
+<img alt="Barras Empilhadas" title="Barras Empilhadas" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/barras-empilhadas.png" />
+
+Nesse tipo de gráfico não precisamos nos atentar ao todo para entender qual o maior, ele já ficará destacado numa barra maior que as outras na relação de gastos apresentada pelo gráfico.
