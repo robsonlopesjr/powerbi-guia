@@ -106,18 +106,31 @@
 <li>Converte em número uma cadeia de texto que representa um número.</li>
 
 ## Funções de Inteligência de Tempo
+<li><strong>Todas elas precisam da CALCULATE para funcionar</strong> e sempre que o argumento solicitado na fórmula for uma DATA, você deve referenciar somente a coluna Data da sua tabela dCalendário (mesmo que a comparação seja nível anual ou mensal, a coluna que você deve referenciar é a de DATA apenas.</li>
 
 ### DATEADD
-<li>Retorna o resultado daquela medida correspondente a um <strong>período anterior</strong>.</li>
+<li>Retorna o resultado daquela medida correspondente a um <strong>período anterior</strong> (pode ser de mês, ano, dia ou trimestre - e você define o intervalo de comparação desejado).</li>
+<li>Muito comum esse tipo de comparação para ver quanto evoluiu de um ano para o outro.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/inteligencia_de_tempo/dateadd/saber-quanto-evoluiu-de-um-ano-para-o-outro.pdf">Exemplo: Saber quanto evoluiu de um ano para o outro.
+</a></li>
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/inteligencia_de_tempo/dateadd/saber-quanto-evoluiu-de-um-mes-para-o-outro.pdf">Exemplo: Saber quanto evoluiu de um mês para o outro.
+</a></li>
 
 ### SAMEPERIODLASTYEAR
-<li>Retorna o resultado daquela medida correspondente a um <strong>ano anterior</strong>.</li>
+<li>Retorna o resultado daquela medida correspondente a um <strong>ANO anterior</strong> (somente ano).</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/inteligencia_de_tempo/sameperiodlastyear/saber-quanto-evoluiu-de-um-ano-para-o-outro.pdf">Exemplo: Saber quanto evoluiu de um ano para o outro.
+</a></li>
 
 ### DATESYTD
-<li>Retorna o <strong>resultado acumulado</strong> daquela medida até a presente data/momento.</li>
+<li>Retorna o <strong>resultado ACUMULADO</strong> daquela medida até a presente data/momento (Além de YTD (year-to-date) é possível também usar a DATESMTD (month-to-date) e DATESQTD (quarter-to-date).</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/inteligencia_de_tempo/datesytd/retorna-resultado-acumulado-ate-a-presente-data-atual.pdf">Exemplo: Retorna o resultado acumulado até a presente data.
+</a></li>
 
 ### DATESINPERIOD
-<li>Retorna o <strong>resultado acumulado móvel</strong> de um <strong>período especificado</strong>.</li>
+<li>Retorna o <strong>resultado acumulado MÓVEL</strong> de um <strong>período especificado</strong> (conhecido também como "running total").</li>
 
 ## Função FORMAT para datas
 
