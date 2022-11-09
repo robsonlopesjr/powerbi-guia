@@ -76,8 +76,14 @@
 
 ### CALCULATE
 <li>Avalia uma expressão em um contexto de <strong>filtro</strong> modificado</li>
-<li>A função CALCULATE funciona como a "SOMASE ou COUNT.SE" no Excel. A diferença é que aqui podemos criar medidas baseado em QUALQUER tipo de cálculo (não somente Soma, Contagem, etc), facilita pensar a função como "CALCULATESE"</li>
+<li>A função CALCULATE funciona como a "SOMASE ou COUNTSE" no Excel. A diferença é que aqui podemos criar medidas baseado em QUALQUER tipo de cálculo (não somente Soma, Contagem, etc), facilita pensar a função como "CALCULATESE"</li>
 <li>Você calcula algo de acordo com o critério de filtro especificado.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/iteradoras/calculate/saber-o-faturamento-somente-de-uma-categoria.pdf">Exemplo: Saber o faturamento de somente uma categoria.
+</a></li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/iteradoras/calculate/saber-o-faturamento-de-varias-categoria-exceto-algumas.pdf">Exemplo: Saber o faturamento de várias categoria, exceto alguma(s).
+</a></li>
 
 ## Funções de Texto
 
@@ -133,6 +139,36 @@
 ### CALENDAR
 <li>Retorna uma tabela com apenas uma coluna chamada "Date" que contém um conjunto contínuo de datas. O intervalo de datas é da <strong>data de início especificada até a data de término especificada</strong>.</li>
 
+## Fórmula pronta para criar uma tabela dimensão calendário dinâmica
+
+1) Vá até a Guia Dados.
+2) Clique em <strong>Nova Tabela</strong>.
+3) Copie e cole o conteúdo abaixo na barra de fórmulas.
+4) Altere a referência 'fVendas'[Data] para a coluna da tabela que contém a data desejada no seu modelo de dados.
+5) Pressione <strong>Enter</strong>
+6) Pronto! Sua tabela calendário dinâmica está criada e irá se atualizar conforme novas datas surgirem na tabela fato.
+
+```
+dCalendario Dinamica = 
+VAR MinAno = YEAR(MIN('fVendas'[Data]))
+VAR MaxAno = YEAR(MAX('fVendas'[Data]))
+RETURN
+ADDCOLUMNS(
+    FILTER(
+        CALENDARAUTO(),
+        YEAR([Date]) >= MinAno &&
+        YEAR([Date]) <= MaxAno
+    ),
+    "Ano", YEAR([Date]),
+    "Num Trimestre", INT(FORMAT([Date], "q")),
+    "Trimestre", "Q" & INT(FORMAT([Date],"q")),
+    "Mês", MONTH([Date]),
+    "Nome do mês", FORMAT([Date],"mmmm"),
+    "Mês abrev", FORMAT([Date],"mmm"),
+    "Semana do ano", WEEKNUM([Date])
+)
+```
+
 ## Funções Lógicas
 
 ### IF
@@ -183,36 +219,6 @@
 <li>Função DIVIDE vs. operador (/)</li>
 <li>Executa a divisão e retorna o resultado alternativo ou BLANK() na divisão por 0</li>
 <li>A função DIVIDE foi criada para lidar automaticamente com casos de divisão por zero. Se um resultado alternativo não for passado e o denominador for zero ou ficar EM BRANCO, a função retornará "EM BRANCO". Quando um resultado alternativo é definido na função, ele será retornado, ao invés da palavra EM BRANCO (ou infinito)</li>
-
-## Fórmula pronta para criar uma tabela dimensão calendário dinâmica
-
-1) Vá até a Guia Dados.
-2) Clique em <strong>Nova Tabela</strong>.
-3) Copie e cole o conteúdo abaixo na barra de fórmulas.
-4) Altere a referência 'fVendas'[Data] para a coluna da tabela que contém a data desejada no seu modelo de dados.
-5) Pressione <strong>Enter</strong>
-6) Pronto! Sua tabela calendário dinâmica está criada e irá se atualizar conforme novas datas surgirem na tabela fato.
-
-```
-dCalendario Dinamica = 
-VAR MinAno = YEAR(MIN('fVendas'[Data]))
-VAR MaxAno = YEAR(MAX('fVendas'[Data]))
-RETURN
-ADDCOLUMNS(
-    FILTER(
-        CALENDARAUTO(),
-        YEAR([Date]) >= MinAno &&
-        YEAR([Date]) <= MaxAno
-    ),
-    "Ano", YEAR([Date]),
-    "Num Trimestre", INT(FORMAT([Date], "q")),
-    "Trimestre", "Q" & INT(FORMAT([Date],"q")),
-    "Mês", MONTH([Date]),
-    "Nome do mês", FORMAT([Date],"mmmm"),
-    "Mês abrev", FORMAT([Date],"mmm"),
-    "Semana do ano", WEEKNUM([Date])
-)
-```
 
 ## Natureza dos dados
 
