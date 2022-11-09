@@ -246,3 +246,33 @@ Baseado na sua natureza, seguem algumas dicas para melhor visualização dos dad
 Exemplo de como representar os dados quando se quer comparar duas variáveis baseado em sua natureza.
 
 <img alt="Representação dos Dados" title="Representação dos Dados" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/representacao-dados.png" />
+
+## Gráficos mais usados no Power BI
+
+### Variação no tempo
+<li>Análises gráficas para mostrar a variação como uma determinada variável se comporta no tempo.</li>
+<img alt="Gráficos de Variação no Tempo" title="Gráficos de Variação no Tempo" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/variacao-no-tempo.png" />
+
+#### Colunas Empilhadas
+Para criar o gráfico de colunas empilhadas no Power BI, devemos na primeira guia do Power BI, no menu à direita de Visualizações, procurar pelo ícone correspondente ao gráfico, e clicar. Arraste para onde quiser e dimensione de acordo com o que desejar.
+
+Iremos procurar pela tabela de "Variação no Tempo", no menu à direita, onde teremos os nossos dados de interesse, e iremos inserir "Qtd. Vendas" como valores e "Data da Venda" como Eixo. Teremos, então, a seguinte visualização:
+<img alt="Colunas Empilhadas" title="Colunas Empilhadas" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/colunas-empilhadas.png" />
+
+<strong>O gráfico de colunas empilhadas nos traz uma visualização "quebrada"</strong> das vendas durante o ano, como se fizesse uma separação física entre os meses, o que não é o que queremos. <strong>O ideal</strong> para vermos a continuidade de vendas durante um período <strong>é uma visualização contínua</strong>, sem "quebras" ou separações.
+
+O gráfico de <strong>linhas é melhor do que o de colunas empilhadas para dar essa sensação de continuidade</strong> dos dados.
+
+#### Linhas
+Para criar o gráfico de linhas no Power BI, lembre-se de clicar fora do gráfico de colunas empilhadas (na área em branco do nosso relatório) para ele não ser substituído ao criar o gráfico de linhas. Iremos no menu <strong>Visualizações</strong>, procurar pelo <strong>ícone</strong> correspondente ao gráfico, e <strong>clicar. Arraste para onde quiser</strong> e <strong>dimensione</strong> de acordo com o que desejar.
+
+Iremos procurar pela tabela de "Variação no Tempo", no menu à direita, onde teremos os nossos dados de interesse, e iremos <strong>inserir "Qtd. Vendas" como valores e "Data da Venda" como Eixo</strong>, novamente. Teremos, então, a seguinte visualização:
+<img alt="Linhas" title="Linhas" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/linhas.png" />
+
+Temos também um gráfico muito parecido com o de linhas, que difere apenas pelo preenchimento da parte debaixo da linha (literalmente) até o eixo horizontal do gráfico com uma cor. Ele é como se fosse o gráfico de linhas com o preenchimento na parte debaixo da linha, o que dá um efeito visual interessante ao gráfico, que não parece ser mais "vazio".
+
+#### Áreas
+Para criar o gráfico de área no Power BI, lembre-se de clicar fora do gráfico de colunas empilhadas (na área em branco do nosso relatório) para ele não ser substituído ao criar o gráfico de área. Iremos no menu Visualizações, procurar pelo ícone correspondente ao gráfico, e clicar. Arraste para onde quiser e dimensione de acordo com o que desejar.
+
+Iremos procurar pela tabela de “Variação no Tempo”, no menu à direita, onde teremos os nossos dados de interesse, e iremos inserir “Qtd. Vendas” como valores e “Data da Venda” como Eixo, novamente. Teremos, então, a seguinte visualização:
+<img alt="Área" title="Área" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/area.png" />
