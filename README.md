@@ -205,10 +205,14 @@ ADDCOLUMNS(
 </a></li>
 
 ## Funções de Relação
+<li>As funções nessa categoria são para o gerenciamento e a utilização de relações entre tabelas.</li>
 
 ### RELATED
 <li>Retorna um valor relacionado de outra tabela (traz valor do lado 1 – da tabela DIMENSÃO).</li>
 <li>Essa função não realiza nenhuma operação matemática, apenas "abre a porta" para acessarmos colunas que estão em outra tabela relacionada no modelo.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/funcoes_de_relacao/related/custo-total.pdf">Exemplo: Custo Total.
+</a></li>
 
 ### RELATEDTABLE
 <li>Retorna uma tabela relacionada, filtrada apenas com as linhas que possuem conexão (lado muitos - da tabela FATO).</li>
