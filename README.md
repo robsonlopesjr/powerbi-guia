@@ -246,6 +246,15 @@ ADDCOLUMNS(
 <li>Executa a divisão e retorna o resultado alternativo ou BLANK() na divisão por 0</li>
 <li>A função DIVIDE foi criada para lidar automaticamente com casos de divisão por zero. Se um resultado alternativo não for passado e o denominador for zero ou ficar EM BRANCO, a função retornará "EM BRANCO". Quando um resultado alternativo é definido na função, ele será retornado, ao invés da palavra EM BRANCO (ou infinito)</li>
 
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/outras_funcoes/divide/margem-lucro.pdf">Exemplo: Calcular a margem de lucro (Medida em Porcentagem).
+</a></li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/outras_funcoes/divide/ticket-medio.pdf">Exemplo: Em média, qual o valor que faz em cada venda (Ticket Médio).
+</a></li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/outras_funcoes/divide/percentual-de-produtos-que-possuem-isencao-de-impostos.pdf">Exemplo: Percentual de produtos que possuem isenção de impostos.
+</a></li>
+
 ## Natureza dos dados
 
 <img alt="Natureza dos Dados" title="Natureza dos Dados" src="https://github.com/robsonlopesjr/powerbi-guia/blob/master/imagens/natureza-dados.png" />
