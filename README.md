@@ -187,6 +187,9 @@ ADDCOLUMNS(
 ### IF
 <li>Verifica uma condição e retorna um valor quando é VERDADEIRO; caso contrário, retorna um segundo valor.</li>
 
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/logica/if/verificar-atingimento-meta.pdf">Exemplo: Verificar se atingiu a meta.
+</a></li>
+
 ### IFERROR
 <li>Avalia uma expressão e retorna um valor especificado se a expressão retorna um erro; caso contrário, retorna o valor da própria expressão.</li>
 <li>Ideal para combinar com outras funções</li>
@@ -194,6 +197,12 @@ ADDCOLUMNS(
 ### SWITCH
 <li>Avalia uma expressão em relação a uma lista de valores e retorna uma das várias expressões de resultados possíveis.</li>
 <li>Ideal para substituir o uso da função IF quando você tem uma situação com muitas condições (é posível combiná-la com a expressão TRUE (verdadeiro).</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/logica/switch/verificar-atingimento-meta.pdf">Exemplo: Verificar se atingiu a meta com Emoji (Exemplo com uma condição).
+</a></li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/logica/switch/verificar-atingimento-meta-mais-de-uma-condicao.pdf">Exemplo: Verificar se atingiu a meta (Exemplo com mais de uma condição).
+</a></li>
 
 ## Funções de Relação
 
