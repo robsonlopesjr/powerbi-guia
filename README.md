@@ -117,6 +117,12 @@
 <li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/inteligencia_de_tempo/dateadd/saber-quanto-evoluiu-de-um-mes-para-o-outro.pdf">Exemplo: Saber quanto evoluiu de um mês para o outro.
 </a></li>
 
+### DATEDIFF
+<li>Retorna o número de unidades (unidade especificada no Intervalo) entre as duas datas inseridas.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/inteligencia_de_tempo/datediff/calcular-tempo-entrega.pdf">Exemplo: Calcular tempo de entrega.
+</a></li>
+
 ### SAMEPERIODLASTYEAR
 <li>Retorna o resultado daquela medida correspondente a um <strong>ANO anterior</strong> (somente ano).</li>
 
