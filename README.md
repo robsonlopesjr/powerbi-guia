@@ -67,6 +67,10 @@
 ### COUNTX
 
 ### AVERAGEX
+<li>Calcula a média (média aritmética) de um conjunto de expressões avaliadas de uma coluna.</li>
+
+<li><a href="https://github.com/robsonlopesjr/powerbi-guia/blob/master/iteradoras/averagex/tempo-medio-entrega.pdf">Exemplo: Tempo médio de entrega.
+</a></li>
 
 ### RANKX
 <li>Ideal para quando precisamos fazer um ranking de produtos, vendedores, clientes (e várias outras aplicações, de acordo com a situação de negócio).</li>
